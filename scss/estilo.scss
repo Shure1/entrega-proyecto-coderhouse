@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    
+}
+h2{
+    font-size:70px ;
+}
+
+body{
+    background-color: #e8e9ed;
+}
+img{
+    width: 200px;
+    height: 400px;
+}
+
+@import "header";
+@import "portada";
+@import "footer";
+@import "resumen-contacto";
+@import "resumen-sobremi";
+@import "galeria-indice";
+@import "testimonios";
+@import "form-contacto";
+@import "galeria-portafolio";
+
+.articulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo1 img{
+    width: 300px;
+    height: 200px;
+    
+}
+
+.articulo2 img{
+    width: 100%;
+}
+
+.articulo3 img{
+    width: 100%;
+}
+
+.articulo4{
+    padding: 40px;
+}
+.articulo5{
+    padding: 20px;
+}
+
+.articulo5 img{
+    width: 100%;
+    
+}

@@ -1,0 +1,162 @@
+.wrapper{
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+    @media screen and (max-width: 60rem){
+        padding: 1rem;
+    }
+    h2{
+        text-align: center;
+    }
+    .gallery{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(7, 6rem);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        grid-template-areas:
+        "foto1 foto1 foto5 foto5 foto2 foto2 foto2"
+        "foto1 foto1 foto3 foto3 foto3 foto4 foto4"
+        "foto6 foto6 foto6 foto6 foto7 foto7 foto7"
+        ;
+        @media screen and (max-width: 60rem){
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(7,1fr);
+            grid-template-areas:
+            "foto1 foto5"
+            "foto1 foto5"
+            "foto2 foto2"
+            "foto3 foto3"
+            "foto4 foto4"
+            "foto6 foto6"
+            "foto7 foto7"
+            ;
+        }
+        @media screen and (max-width: 37.5rem){
+            display: block;
+        }
+        .foto1 {
+            grid-area: foto1;
+        }
+        
+        .foto2 {
+            grid-area: foto2;
+        }
+        
+        .foto3 {
+            grid-area: foto3;
+        }
+        
+        .foto4 {
+            grid-area: foto4;
+            justify-items: center;
+        }
+        
+        .foto5 {
+            grid-area: foto5;
+        }
+        
+        .foto6 {
+            grid-area: foto6;
+        }
+        
+        .foto7 {
+            grid-area: foto7;
+        }
+        .galley_item{
+            @media screen and (max-width: 37.5rem){
+                margin: .5rem
+            }
+            .gallery_link{
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                @media screen and (max-width: 37.5rem){
+                    height: 80vw;
+                }
+                &:hover{
+                    .gallery__image{
+                        transform: scale(1.2);
+                        filter: blur(2px)
+                    }
+                }
+                .gallery__image{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transform: scale(1.05);
+                    transition: 
+                        transfrom .5s
+                        filter .5s;
+                }
+                &:hover{
+                    .gallery__overlay{
+                        opacity: 1;
+                        span{
+                            &:before{
+                                width: 100%;
+                            }
+                            &:after{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .gallery__overlay{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background: rgba(0, 0, 0, .4);
+                    font-size: 1.5rem;
+                    color: #fff;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 10px;
+
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity .2s;
+
+                    span{
+                        position: relative;
+                        line-height: 3rem;
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 0;
+                            background-color: #fff;
+                            transition: width .3s ease-out;
+                        }
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 0;
+                            background-color: #fff;
+                            transition: width .3s ease-out;
+
+                        }
+                        &:before{
+                            top: 0;
+                            left: 0;
+                        }
+                        &:after{
+                            bottom:0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

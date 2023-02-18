@@ -1,0 +1,83 @@
+.form-area{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    .container{
+        .row {
+            box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.7);
+            .col-sm-12, .col-lg-6{
+                
+                .left{
+                    background: blueviolet;
+                    padding: 200px 98px;
+                    @media (max-width:767px){
+                        padding: 90px 15px;
+                        text-align: center;
+                    }
+                    h2{
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 48px;
+                        @media (max-width:767px){
+                            font-size: 25px;
+                        }
+                        span{
+                            font-weight: 100;
+                        }
+                    }
+                }
+                .right{
+                    padding: 70px 100px;
+                    position: relative;
+                    @media (max-width:767px){
+                        padding: 25px;
+                    }
+                    i{
+                        position: absolute;
+                        font-size: 80px;
+                        left: -27px;
+                        top: 40%;
+                        color: #fff;
+                        @media (max-width:767px){
+                            top: -52px;
+                            transform: rotate(90deg);
+                            left: 45%;
+                        }
+                        @media (min-width: 768px) and (max-width:991px){
+                            top: -52px;
+                            transform: rotate(90deg);
+                            left: 50%;
+                        } 
+                    }
+                    form{
+                        .mb-3{
+                            .form-control{
+                                border: 2px solid #000;
+                            }
+                        }
+                        button{
+                            border: none;
+                            border-radius: 0;
+                            background: #252525;
+                            width: 180px;
+                            color: #fff;
+                            padding: 15px 0;
+                            display: inline-block;
+                            font-size: 16px;
+                            margin-top: 20px;
+                            cursor: pointer;
+                            &:hover{
+                                background: #2b3f46;
+                            }
+                            @media (max-width:767px){
+                                width: 150px;
+                                padding: 12px 0;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.contenedor-resumen-sobremi {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 1200px;
+    height: 900px;
+    margin: auto;
+    .columnas{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        width: 1200px;
+        height: 550px;
+        .imagen1{
+            position: absolute;
+            width: 600px;
+            top: 60px;
+            left: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px 5px rgba(0, 0, 0, .4);
+        }
+        .padre{
+            position: absolute;
+            width: 400px;
+            height: 600px;
+            top:30px;
+            right: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px 5px rgba(0, 0, 0, .4);
+            z-index: 1;
+        }
+        .hijo{
+            position: absolute;
+            width: 200px;
+            height: 340px;
+            top: 200px;
+            right: 340px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px 5px rgba(0, 0, 0, .4);
+            z-index: 10;
+        }
+
+    }
+    .sobre-mi-resumen{
+        padding: 20px 400px 20px 20px;
+    }
+
+}

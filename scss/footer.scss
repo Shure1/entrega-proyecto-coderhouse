@@ -1,0 +1,141 @@
+.footer-distribucion{
+    background-color: #333333;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px;
+    padding: 50px 50px 60px 50px;
+    .footer-izq{
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        @media screen and (max-width: 880px){
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+    h3{
+        color: #fff;
+        font: normal 36px;
+        margin: 0;
+        span{
+            color: #2e86ab;
+        }
+    }
+    .footer-links{
+        color: #fff;
+        margin: 20px 0 12px;
+        a{
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+            &:hover{
+                color: #2e86ab;
+            }
+        }
+    }
+    .footer-compañia-nombre{
+        color: #fff;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+    .footer-centro{
+        width: 35%;
+        display: inline-block;
+        vertical-align: top;
+        @media screen and (max-width: 880px){
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        i{
+            background-color: #33383b;
+            color: #fff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+            @media screen and (max-width: 880px){
+                margin-left: 0;
+            }
+            .fa-envelope{
+                font-size: 17px;
+                line-height: 38px;
+            }
+        }
+        p{
+            display: inline-block;
+            color: #fff;
+            vertical-align: middle;
+            margin: 0;
+            span{
+                display: block;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 2;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    .footer-der{
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        @media screen and (max-width: 880px){
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+    .footer-compañia-sobre{
+        line-height: 20px;
+        color: #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+        span{
+            display: block;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+    .footer-icons{
+        margin-top: 25px;
+        a{
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            line-height: 35px;
+            i{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 5px;
+            }
+            &:hover{
+                background-color: #2e86ab;
+            }
+        }
+    }
+}

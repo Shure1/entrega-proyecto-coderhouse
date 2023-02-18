@@ -1,0 +1,56 @@
+.portada-contenedor-imagen{
+    background-image: url(../img/portada.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    
+}
+.portada-contenedor-imagen2{
+    background-image: url(../img/sobre-mi.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    
+}
+
+.portada-contenedor-imagen3{
+    background-image: url(../img/contacto.jpg );
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+.portada-contenedor-imagen4{
+    background-image: url(../img/inspiracion.jpg );
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    
+}
+
+.portada-contenedor-imagen5{
+    background-image: url(../img/portafolio.jpg );
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    
+}
+
+.contenedor-portada{
+    position:absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

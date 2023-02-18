@@ -1,0 +1,102 @@
+.seccion-testimonio{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 20px;
+    .container-feedback{
+        .section-header{
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+            text-align: center;
+            font-weight: 900;
+            padding-bottom: 25px;
+            &:after{
+                content: '';
+                height: 3px;
+                width: 200px;
+                position: absolute;
+                bottom: 0;
+                left: 500px;
+                background: #2e86ab;
+            }
+            span{
+                display: block;
+                font-size: 20px;
+                font-weight: 300;
+            }
+            
+        }
+        .testimonios{
+            max-width: 1200px;
+            padding: 0 15px 50px;
+            margin: 0 auto 80px auto;
+            .carousel{
+                .carousel-inner{
+                    .carousel-item{
+                        .single-item{
+                            background: #F7FFF7;
+                            color: #111;
+                            padding: 15px;
+                            margin: 50px 15px;
+                            .row{
+                                .col-md-5{
+                                    .profile{
+                                        margin-bottom: 30px;
+                                        text-align: center;
+                                        .img-area{
+                                            margin: 0 15px 15px 15px;
+                                            img{
+                                                height: 200px;
+                                                width: 200px;
+                                                border-radius: 50%;
+                                                border: 7px solid #2e86ab;
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                                .col-md-6{
+                                    .content{
+                                        font-size: 18px;
+                                        p{
+                                            text-align: justify;
+                                            span{
+                                                font-size: 48px;
+                                                margin-right: 20px;
+                                                color: #333333;
+                                            }
+                                        }
+                                        .socials {
+                                            i{
+                                                margin-right: 25px;
+                                            }
+                                        
+                                        }
+                                    }
+                                }
+                            }
+                        
+                        }
+                    }
+                }
+                .carousel-control-prev{
+                    .carousel-control-prev-icon{
+                        background-color: #333333;
+                    }
+                }
+                .carousel-control-next{
+                    .carousel-control-next-icon{
+                        background-color: #333333;
+                    }
+                }
+            }
+        
+        }
+    }
+    
+
+        
+    
+   
+}

@@ -257,14 +257,14 @@ img{
 .wrapper{
     max-width: 1200px;
     padding: 2rem;
-    margin: 0 auto;;
+    margin: 0 auto;
 }
 
 .wrapper h2{
     text-align: center;
 }
 
-.gallery{
+.wrapper .gallery{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(7, 6rem);
@@ -274,6 +274,26 @@ img{
     "foto1 foto1 foto5 foto5 foto2 foto2 foto2"
     "foto1 foto1 foto3 foto3 foto3 foto4 foto4"
     "foto6 foto6 foto6 foto6 foto7 foto7 foto7"
+    ;
+}
+
+.gallery1{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 9rem);
+    grid-template-rows: repeat(5, 15rem);
+    gap: 10px;
+
+    
+    
+    grid-template-areas:
+    "foto1 foto1 foto1 foto4 foto4 foto4"
+    "foto1 foto1 foto1 foto7 foto7 foto7"
+    "foto6 foto6 foto3 foto3 foto5 foto5"
+    "foto2 foto2 foto3 foto3 foto5 foto5"
+    "foto8 foto9 foto9 foto9 foto10 foto10"
+    
+    
     ;
 }
 
@@ -306,7 +326,27 @@ img{
     grid-area: foto7;
 }
 
+.foto8{
+    grid-area: foto8;
+}
+
+.foto9{
+    grid-area: foto9;
+}
+
+.foto10{
+    grid-area: foto10;
+}
+
 .gallery_link{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery_link1{
     position: relative;
     display: block;
     width: 100%;
@@ -390,6 +430,11 @@ img{
     filter: blur(2px)
 }
 
+.gallery_link1:hover .gallery__image{
+    transform: scale(1.2);
+}
+
+
 @media screen and (max-width: 60rem){
     .wrapper{
         padding: 1rem;
@@ -405,6 +450,28 @@ img{
         "foto4 foto4"
         "foto6 foto6"
         "foto7 foto7"
+    ;
+    }
+
+}
+@media screen and (max-width: 60rem){
+    .wrapper{
+        padding: 1rem;
+    }
+    .gallery1{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-template-areas:
+        "foto1 foto5"
+        "foto1 foto5"
+        "foto2 foto2"
+        "foto3 foto3"
+        "foto4 foto4"
+        "foto6 foto6"
+        "foto7 foto7"
+        "foto8 foto9"
+        "foto8 foto9"
+        "foto10 foto10"
     ;
     }
 
@@ -514,14 +581,97 @@ img{
 }
 
 
-.footer-distribucion{
-    background-color: #333333;
-    box-sizing: border-box;
-    widows: 100%;
-    text-align: left;
-    font: bold 16px;
-    padding: 50px 50px 60px 50px;
-   
+
+
+.form-area{
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.row .single-form{
+    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.7);
+}
+
+.left{
+    background: blueviolet;
+    padding: 200px 98px;
+}
+
+.left h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.left h2 span{
+    font-weight: 100;
+}
+
+.right{
+    padding: 70px 100px;
+    position: relative;
+}
+
+.right i{
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #fff;   
+}
+
+.form-control{
+    border: 2px solid #000;
+}
+
+.right button{
+    border: none;
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.right button:hover{
+    background: #2b3f46;
+}
+
+@media (min-width: 768px) and (max-width:991px){
+    .right i{
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+}
+
+@media (max-width:767px){
+    .left{
+        padding: 90px 15px;
+        text-align: center;
+    }
+    .left h2{
+        font-size: 25px;
+    }
+    .right{
+        padding: 25px;
+    }
+    .right i{
+        top: -52px;
+        transform: rotate(90deg);
+        left: 45%;
+
+    }
+    .right button{
+        width: 150px;
+        padding: 12px 0;
+    }
+
 }
 
 
@@ -537,8 +687,6 @@ img{
     height: 200px;
     
 }
-
-
 
 .articulo2 img{
     width: 100%;
@@ -561,7 +709,15 @@ img{
 }
 
 
-
+.footer-distribucion{
+    background-color: #333333;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px;
+    padding: 50px 50px 60px 50px;
+   
+}
 
 
 .footer-distribucion .footer-izq, .footer-distribucion .footer-centro,
