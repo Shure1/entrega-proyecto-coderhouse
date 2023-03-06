@@ -1,9 +1,49 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --blanco: #ffffff;
+    --negro:#000000;
+
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    
 }
 h2{
     font-size:70px ;
@@ -12,10 +52,7 @@ h2{
 body{
     background-color: #e8e9ed;
 }
-img{
-    width: 200px;
-    height: 400px;
-}
+
 
 @import "header";
 @import "portada";
@@ -26,16 +63,25 @@ img{
 @import "testimonios";
 @import "form-contacto";
 @import "galeria-portafolio";
+@import "opiniones";
 
 .articulo1{
     display: flex;
     justify-content: center;
     align-items: center;
+    p{
+        width: 40rem
+    }
+
 }
 
+
+
 .articulo1 img{
-    width: 300px;
-    height: 200px;
+    width: 15rem;
+    height: 16rem;
+    object-fit: cover;
+    margin-bottom: 3rem;
     
 }
 
